@@ -84,7 +84,7 @@ $.getJSON("https://api.hypixel.net/skyblock/bazaar?key=b8ec178c-b211-48ea-be2f-7
 			
 			key = nameExceptions[key].replace(" ", "_").toUpperCase();
 		}
-		cell2.innerHTML = "<img src=img/icons/" + key.split(' ').join('_') + ".png style=\"width:50px;height:50px;\"></img>"
+		cell2.innerHTML = "<img src=img/items/" + key.split(' ').join('_') + ".png style=\"width:50px;height:50px;\"></img>"
   		cell1.innerHTML = key.split('_').join(' ').toProperCase().replace(':', ' ');
 		try {
   			cell3.innerHTML = buyprice.toString().split('.')[0] + '.' + price.toString().split('.')[1].slice(0, 2) + " coins";
