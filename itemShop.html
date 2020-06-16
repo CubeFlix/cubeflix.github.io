@@ -77,7 +77,7 @@ $.getJSON("merchantPrices.json", function(json) {
 		if (key in nameExceptions){
 			
 			key = nameExceptions[key].replace(" ", "_").toUpperCase();
-		}
+		} 
 		cell2.innerHTML = "<img src=img/items/" + key + ".png style=\"width:50px;height:50px;\"></img>"
   		cell1.innerHTML = key.split('_').join(' ').toProperCase();
 		try {
