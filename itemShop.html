@@ -78,6 +78,13 @@ $.getJSON("merchantPrices.json", function(json) {
 			
 			key = nameExceptions[key].replace(" ", "_").toUpperCase();
 		}
+		$.get("img/items/" + key + ".png", function(imagedata){
+			url: "/myhandler", 
+    		data: {value: 1},
+    		type: 'post',
+    		error: function(XMLHttpRequest, textStatus, errorThrown){key = key.toTitleCase();},
+    	success: function(data){}
+		}
 		cell2.innerHTML = "<img src=img/items/" + key + ".png style=\"width:50px;height:50px;\"></img>"
   		cell1.innerHTML = key.split('_').join(' ').toProperCase();
 		try {
