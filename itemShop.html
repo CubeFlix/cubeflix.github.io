@@ -79,7 +79,7 @@ $.getJSON("merchantPrices.json", function(json) {
 			key = nameExceptions[key].replace(" ", "_").toUpperCase();
 		}
 		$.get("img/items/" + key + ".png", function(imagedata){
-			url: "/myhandler", ,
+			url: "/myhandler",
     		type: 'get',
     		error: function(XMLHttpRequest, textStatus, errorThrown){console.log(key);key = key.toTitleCase();},
     	success: function(data){}
