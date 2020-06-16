@@ -5,7 +5,7 @@
 ![Item Shop 2](images/itemshop2.png)
 
 
-A tool for getting bazaar price data and item shop price data, specifically items that can be traded with the bazaar for a profit.
+A website tool for getting bazaar price data and item shop price data, specifically items that can be traded with the bazaar for a profit.
 
 Skyblock has item shops and a bazaar, which have differences in price. You can take advantage of this by buying stuff from the item shop and selling it to the bazaar for a profit.
 
@@ -15,21 +15,9 @@ Skyblock has item shops and a bazaar, which have differences in price. You can t
 Instructions: 
 ============
 
-To use website:
+Head on over to cubeflix.github.io.
 
-Open the html file im /html/
-
-(also includes nice web scraper for gathering item images off skyblock's wiki)
-
-To use scripts:
-
-Download the script.
-
-Install Python.
-
-Run the script /python/tradeSuggestionCalculator.py. You should see an output like this:
-
-![Output](images/output.PNG)
+That's it!
 
 
 To gather data, import the correct data gathering script, and run one of the functions within it.
