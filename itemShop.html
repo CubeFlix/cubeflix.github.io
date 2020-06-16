@@ -78,10 +78,15 @@ $.getJSON("merchantPrices.json", function(json) {
 			
 			key = nameExceptions[key].replace(" ", "_").toUpperCase();
 		}
-		$.ajax("img/items/" + key + ".png", function(imagedata){
-    		error: function(XMLHttpRequest, textStatus, errorThrown){console.log(key);key = key.toTitleCase();},
-    	success: function(data){}
-		}
+$.ajax({
+     url: "img/items/" + key + ".png",
+     success: function(returnData){
+         console.log('good');
+     },
+     error: function(xhr, status, error){
+         key = key.toTitleCase();
+     }
+});
 		cell2.innerHTML = "<img src=img/items/" + key + ".png style=\"width:50px;height:50px;\"></img>"
   		cell1.innerHTML = key.split('_').join(' ').toProperCase();
 		try {
