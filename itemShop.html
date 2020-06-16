@@ -80,7 +80,7 @@ $.getJSON("merchantPrices.json", function(json) {
 		}
 		$.get("img/items/" + key + ".png", function(imagedata){
 			url: "/myhandler", ,
-    		type: 'post',
+    		type: 'get',
     		error: function(XMLHttpRequest, textStatus, errorThrown){console.log(key);key = key.toTitleCase();},
     	success: function(data){}
 		}
